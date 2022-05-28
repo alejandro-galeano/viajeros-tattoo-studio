@@ -1,0 +1,235 @@
+
+ /*  configuraciones generales */
+
+html {
+    font-size: 62,5%;  /* 1rem pase a valer a 10px. Por defecto el navegador aplica 16px */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    background-color: hsla(34, 65%, 80%, 1);
+    margin-top: 126px;
+}
+
+a , li {
+    text-decoration: none;
+    list-style: none;    
+}
+
+a , p {
+    color: hsla(17, 63%, 56%, 1);
+    font-weight: bold;
+}
+  /* fin de configuraciones generales */
+
+
+/* HEADER */
+#inicio-header {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    flex-wrap: wrap;
+    
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-titulo h1 {
+    padding: 0 20px;
+    font-size: 31px;
+    font-weight: bold;
+}
+
+/* navegacion */
+
+.lista-header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lista-header li a {
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.lista-header li a:hover {
+    color: hsla(17, 49%, 42%, 1);
+}
+/* fin del HEADER */
+
+/* inicio carrusel */
+#carrusel {
+    display: flex;
+    justify-content: center;
+}
+/* fin del carrusel */
+
+/* inicio del MAIN */
+#artistas { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px repeat(2, 1fr);
+    padding: 0 5rem;
+    row-gap: 2rem;
+    column-gap: 7rem;
+}
+
+#artistas h2 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    font-size: 34px;
+    font-weight: bold;
+    color: hsla(17, 63%, 56%, 1);
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.card {
+    background-color: hsla(28, 87%, 79%, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 4px solid hsla(17, 49%, 42%, 1);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card h3 {
+    color: hsla(17, 49%, 42%, 1);
+    font-size: 22px;
+}
+/* posicion de las tarjetas */
+.card-1 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+.card-2 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+.card-3 {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+
+}
+.card-4 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+.card-5 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+.card-6 {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+}
+/* fin de posicion de las tarjetas */
+
+/* fin del MAIN */
+
+/* inicio de SPOTIFY */
+.spotify {
+    display: flex;
+    margin: 3rem 5rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 17px;
+    color: hsla(17, 63%, 56%, 1);
+    padding: 1rem;
+}
+/* fin de SPOTIFY */
+
+/* inicio de NOSOTROS */
+#nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 0 80px;
+    text-align: center;
+    border: 4px solid hsla(17, 49%, 42%, 1);
+    border-radius: 20px;
+}
+
+#nosotros h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: hsla(17, 63%, 56%, 1)
+}
+/* fin de NOSOTROS */
+
+
+/* inicio de UBICACION Y CONTACTO */
+#ubicacion-contacto {
+    margin: 48px 80px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 100px;
+    row-gap: 48px;
+}
+
+.maps {
+    grid-row: 1 / 2;
+    padding: 16px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: 4px solid hsla(17, 49%, 42%, 1);
+    border-radius: 20px;
+}
+
+.maps h2 {
+    color: hsla(17, 63%, 56%, 1);
+    font-size: 40px;
+
+}
+
+.formulario {
+    grid-row: 2 / 3;
+}
+/* fin de ubicacion y contacto */
+
+
+
+/* inicio del FOOTER */
+#footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista-de-redes li a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#footer p {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 10px;
+}
+/* fin del FOOTER */
