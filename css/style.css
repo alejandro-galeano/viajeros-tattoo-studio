@@ -92,13 +92,7 @@ a , p {
     column-gap: 7rem;
 }
 
-#artistas :hover {
-    transform: scale(1.2);
-    transition: all 1s;
-}
-p :hover {
-    background-color: aqua;
-}
+
 #artistas h2 {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
