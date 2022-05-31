@@ -33,6 +33,7 @@ a , p {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 
@@ -42,7 +43,6 @@ a , p {
     align-items: center;
     padding: 15px;
     flex-wrap: wrap;
-    
 }
 
 .logo-titulo {
@@ -68,18 +68,18 @@ a , p {
     font-size: 20px;
     font-weight: bold;
     font-style: italic;
-    transition: all 0.5s;  /* transition */
 }
 
 .lista-header li a:hover {
     color: hsla(17, 49%, 42%, 1);
 }
 
-
-.barra-navegacion li:hover{ /* transform-transition */
+/* transform-transition */
+.barra-navegacion li:hover{ 
     transform: scale(1.2);  
     transition: all 1s;
 }
+
 /* fin del HEADER */
 
 /* inicio carrusel */
@@ -103,20 +103,24 @@ a , p {
 #artistas h2 {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    font-size: 34px;
+    font-size: 50px;
     font-weight: bold;
     color: hsla(17, 63%, 56%, 1);
     display: flex;
     justify-content: center ;
     align-items: center;
 }
+
+/* transform-transition */
 #artistas :hover {
-    transform: scale(1.2);
-    transition: all 1s;
+    transform: scale(1.1);
+    transition: all 0.7s;
 }
-p :hover {
-    background-color: aqua;
+#artistas .card :hover {
+    transform: none;
 }
+/* transform-transition */
+
 
 .card {
     background-color: hsla(28, 87%, 79%, 1);
@@ -128,6 +132,8 @@ p :hover {
     border-radius: 20px;
     text-align: center;
 }
+
+
 
 .card h3 {
     color: hsla(17, 49%, 42%, 1);
@@ -169,7 +175,7 @@ p :hover {
     margin: 3rem 5rem;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: centser;
     font-size: 17px;
     color: hsla(17, 63%, 56%, 1);
     padding: 1rem;
@@ -193,8 +199,10 @@ p :hover {
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    color: hsla(17, 63%, 56%, 1)
+    color: hsla(17, 63%, 56%, 1);
 }
+
+
 /* fin de NOSOTROS */
 
 
@@ -221,7 +229,16 @@ p :hover {
     color: hsla(17, 63%, 56%, 1);
     font-size: 40px;
 
+    /* inicio de animacion */
+    animation: donde-estamos 2s ease-in-out infinite;
 }
+
+@keyframes donde-estamos {
+    50% {
+        transform: scale(1.4);
+    }
+}
+/* fin de nimacion */
 
 .formulario {
     grid-row: 2 / 3;
@@ -241,7 +258,16 @@ p :hover {
     display: flex;
     align-items: center;
     padding: 10px;
+    /* inicio de animacion */
+    animation: redes-sociales 2s ease-in-out infinite;
 }
+
+@keyframes redes-sociales {
+    50% {
+        transform: translateX(30px);
+    }
+}
+/* fin de animacion */
 
 #footer p {
     display: flex;
@@ -249,3 +275,4 @@ p :hover {
     padding-right: 10px;
 }
 /* fin del FOOTER */
+
